@@ -44,9 +44,10 @@ export default function Router({ navigation })
   return (
     <NavigationContainer >
         <Stack.Navigator screenOptions={{ headerShown: false }}>  
-        {
+        {/* {
           (item === 1) ? null : ( <Stack.Screen name="first" component={WelcomeRoute} /> )
-        }
+        } */}
+            <Stack.Screen name="first" component={WelcomeRoute} />
             <Stack.Screen name="bottomRoute" component={BottomRoute} />
             <Stack.Screen name="PanelRoute" component={PanelRoute} />
             {/* <Stack.Screen name="Network" component={Network} /> */}
